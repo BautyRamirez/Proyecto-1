@@ -1,0 +1,276 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+h1
+{
+    font-size: 2rem;
+    line-height: 1.3em;
+    
+}
+p
+{
+    margin-bottom: 1.6em;
+
+}
+.container
+{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header
+{
+    background: #B71A0A;
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a
+{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+.logo img
+{
+    height: 90px;
+}
+.menu-icono
+{
+    display: none;
+}
+.navegacion ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navegacion ul li
+{
+    display:inline-block
+}
+.navegacion ul li a
+{
+    display:block;
+    padding: 0,5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navegacion ul li a:hover
+{
+    background: #8c909c;
+}
+main
+{
+    padding: 10rem;
+}
+.imagen
+{
+    width: 400px;
+    
+}
+
+@media only screen and (max-width: 768px)
+{
+    .body
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+   .menu-icono
+   {
+    display: block;
+    cursor: pointer;
+    padding:0.5rem 1rem;
+   } 
+   .navegacion
+   {
+    width: 100%;
+    margin-top: 1rem;
+   } 
+    .navegacion ul
+    {
+        display: none;
+    }
+    .navegacion ul.display
+    {
+        display: block;
+    }
+    .navegacion ul li
+    {
+    display: block;
+    }
+    .navegacion ul li a
+    {
+    display:block;
+    padding: 0,5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    }
+    .navegacion ul li a:hover
+    {
+    background: #8c909c;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .menu-icono
+   {
+    display: block;
+    cursor: pointer;
+    padding:0.5rem 1rem;
+   } 
+   .navegacion
+   {
+    width: 100%;
+    margin-top: 1rem;
+   } 
+    .navegacion ul
+    {
+        display: none;
+    }
+    .navegacion ul.display
+    {
+        display: block;
+    }
+    .navegacion ul li
+    {
+    display: block;
+    }
+    .navegacion ul li a
+    {
+    display:block;
+    padding: 0,5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    }
+    .navegacion ul li a:hover
+    {
+    background: #8c909c;
+    }
+}
+@media only screen and (max-width: 1278px)
+{
+    .menu-icono
+   {
+    display: block;
+    cursor: pointer;
+    padding:0.5rem 1rem;
+   } 
+   .navegacion
+   {
+    width: 100%;
+    margin-top: 1rem;
+   } 
+    .navegacion ul
+    {
+        display: none;
+    }
+    .navegacion ul.display
+    {
+        display: block;
+    }
+    .navegacion ul li
+    {
+    display: block;
+    }
+    .navegacion ul li a
+    {
+    display:block;
+    padding: 0,5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    }
+    .navegacion ul li a:hover
+    {
+    background: #8c909c;
+    }
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
